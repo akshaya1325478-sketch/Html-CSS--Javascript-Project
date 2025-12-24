@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+        <h1>Spice Delight Cart</h1>
+        <header>
+
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+</header>
+
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="starter.html">Starter</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <h1 class="section-title">Your Cart</h1>
+
+    <div class="cart-container">
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price (₹)</th>
+                    <th>Quantity</th>
+                    <th>Total (₹)</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Total Amount: ₹<span id="cart-total">0</span></h3>
+            <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+        </div>
+
+    </div>
+
+    <script src="website.js"></script>
+
+</body>
+
+</html>

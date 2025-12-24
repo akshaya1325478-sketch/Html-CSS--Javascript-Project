@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu & Ordering</title>
+<link rel="stylesheet" href="website.css">
+</head>
+<body>
+<header>
+    <h1>Restaurant Menu</h1>
+    <button onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+</header>
+<!-- ⭐ DRINKS -->
+    <div class="menu-section">
+        <h2>Drinks</h2>
+        <div class="menu-grid">
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1544148103-0773b3e6f295" alt="">
+                <h3>Lemon Juice</h3>
+                <p>Fresh & cool.</p>
+                <div class="price">₹50</div>
+                <button onclick="addToCart('Lemon Juice',50)">Add to Cart</button>
+            </div>
+
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="">
+                <h3>Cold Coffee</h3>
+                <p>Strong & smooth.</p>
+                <div class="price">₹110</div>
+                <button onclick="addToCart('Cold Coffee',110)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="website.js"></script>
+</body>
+</html>

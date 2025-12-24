@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  gap: 20px;
+}
+
+.items {
+  width: 65%;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.item button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart {
+  width: 35%;
+  border-left: 2px solid #ccc;
+  padding-left: 15px;
+  position: sticky;
+  top: 10px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}

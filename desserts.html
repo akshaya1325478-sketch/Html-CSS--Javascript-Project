@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+        <h1>Spice Delight Desserts</h1>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="starter.html">Starter</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <h1 class="section-title">
+        <center>Desserts Menu</center>
+    </h1>
+
+    <div class="main-content">
+        <div class="product-grid">
+
+            <!-- 2-1-2-1-2 Pattern for 8 items -->
+
+            <!-- Row 1: 2 items -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1556682851-c4580670113a?w=600&auto=format&fit=crop&q=60"
+                    alt="Ice Cream">
+                <h3>Vanilla Ice Cream</h3>
+                <p>₹120</p>
+                <button class="add-cart-btn" onclick="addToCart('Vanilla Ice Cream', 120, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Vanilla Ice Cream', 120, 'https://images.unsplash.com/photo-1556682851-c4580670113a?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/2184339224/photo/chocolate-ball-dessert-with-white-milk-poured-over-ready-to-eat.webp?a=1&b=1&s=612x612&w=0&k=20&c=2SSxA5D_C6GQKdfDcrVAsAcPBAQpCRGydEu3JyFzPGg="
+                    alt="Brownie">
+                <h3>Chocolate Brownie</h3>
+                <p>₹150</p>
+                <button class="add-cart-btn" onclick="addToCart('Chocolate Brownie', 150, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Chocolate Brownie', 150, 'https://media.istockphoto.com/id/2184339224/photo/chocolate-ball-dessert-with-white-milk-poured-over-ready-to-eat.webp?a=1&b=1&s=612x612&w=0&k=20&c=2SSxA5D_C6GQKdfDcrVAsAcPBAQpCRGydEu3JyFzPGg=')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 2: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1688634231525-085e299c249f?w=600&auto=format&fit=crop&q=60"
+                        alt="Cake">
+                    <h3>Strawberry Cake</h3>
+                    <p>₹180</p>
+                    <button class="add-cart-btn" onclick="addToCart('Strawberry Cake', 180, 'Desserts')">🛒 Add to
+                        Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Strawberry Cake', 180, 'https://images.unsplash.com/photo-1688634231525-085e299c249f?w=600&auto=format&fit=crop&q=60')">⚡
+                        Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Row 3: 2 items -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1657030377423-ab29e5b35f58?w=600&auto=format&fit=crop&q=60"
+                    alt="Custard">
+                <h3>Fruit Custard</h3>
+                <p>₹140</p>
+                <button class="add-cart-btn" onclick="addToCart('Fruit Custard', 140, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Fruit Custard', 140, 'https://images.unsplash.com/photo-1657030377423-ab29e5b35f58?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1724072013765-bb4773d63d6d?q=80&w=687&auto=format&fit=crop"
+                    alt="Pink cookie">
+                <h3>Pink dessert cookie</h3>
+                <p>₹180</p>
+                <button class="add-cart-btn" onclick="addToCart('Pink dessert cookie', 180, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Pink dessert cookie', 180, 'https://images.unsplash.com/photo-1724072013765-bb4773d63d6d?q=80&w=687&auto=format&fit=crop')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 4: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1707328058531-12eae0206093?w=600&auto=format&fit=crop&q=60"
+                        alt="Vanilla">
+                    <h3>Vanilla helly</h3>
+                    <p>₹140</p>
+                    <button class="add-cart-btn" onclick="addToCart('Vanilla helly', 140, 'Desserts')">🛒 Add to
+                        Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Vanilla helly', 140, 'https://images.unsplash.com/photo-1707328058531-12eae0206093?w=600&auto=format&fit=crop&q=60')">⚡
+                        Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Row 5: 2 items -->
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1664391722663-5d509bd342b0?w=600&auto=format&fit=crop&q=60"
+                    alt="Jelly">
+                <h3>Jelly Purple dessert</h3>
+                <p>₹200</p>
+                <button class="add-cart-btn" onclick="addToCart('Jelly Purple dessert', 200, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Jelly Purple dessert', 200, 'https://plus.unsplash.com/premium_photo-1664391722663-5d509bd342b0?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1604927490343-94e97fa6c458?w=600&auto=format&fit=crop&q=60"
+                    alt="Hustle">
+                <h3>Hustle wonder</h3>
+                <p>₹140</p>
+                <button class="add-cart-btn" onclick="addToCart('Hustle wonder', 140, 'Desserts')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Hustle wonder', 140, 'https://images.unsplash.com/photo-1604927490343-94e97fa6c458?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+        </div>
+
+        <!-- SIDE CART -->
+        <div class="side-cart-container hidden">
+            <h3 class="side-cart-title">Desserts Cart</h3>
+            <div id="side-cart-items">
+                <!-- Items injected here -->
+            </div>
+            <div class="side-cart-footer">
+                <strong>Total: ₹<span id="side-cart-total">0</span></strong>
+            </div>
+            <div style="margin-top: 15px; text-align: center;">
+                <a href="cart.html" style="color: #d62828; font-weight: bold; text-decoration: none;">View Full Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BUY NOW MODAL -->
+    <div id="buyNowModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-product-details">
+                <!-- Details injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script>const CURRENT_PAGE_CATEGORY = "Desserts";</script>
+    <script src="website.js"></script>
+</body>
+
+</html>

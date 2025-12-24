@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+        <h1>Spice Delight Products</h1>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="starter.html">Starter</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <h1 class="section-title">
+        <center>Products Menu</center>
+    </h1>
+
+    <div class="main-content">
+        <div class="product-grid">
+
+            <!-- 2-1-2-1-2 Pattern for 8 items -->
+
+            <!-- Row 1: 2 items -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=60"
+                    alt="Veg Burger">
+                <h3>Veg Burger</h3>
+                <p>₹120</p>
+                <button class="add-cart-btn" onclick="addToCart('Veg Burger', 120, 'Products')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Veg Burger', 120, 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60"
+                    alt="Pizza">
+                <h3>Pizza</h3>
+                <p>₹250</p>
+                <button class="add-cart-btn" onclick="addToCart('Pizza', 250, 'Products')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Pizza', 250, 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 2: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&auto=format&fit=crop&q=60"
+                        alt="Noodles">
+                    <h3>Noodles</h3>
+                    <p>₹150</p>
+                    <button class="add-cart-btn" onclick="addToCart('Noodles', 150, 'Products')">🛒 Add to Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Noodles', 150, 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&auto=format&fit=crop&q=60')">Buy
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Row 3: 2 items -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1546548970-71785318a17b?w=600&auto=format&fit=crop&q=60"
+                    alt="Pasta">
+                <h3>Pasta</h3>
+                <p>₹180</p>
+                <button class="add-cart-btn" onclick="addToCart('Pasta', 180, 'Products')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Pasta', 180, 'https://images.unsplash.com/photo-1546548970-71785318a17b?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=60"
+                    alt="Cooldrink">
+                <h3>Cooldrink</h3>
+                <p>₹50</p>
+                <button class="add-cart-btn" onclick="addToCart('Cooldrink', 50, 'Products')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Cooldrink', 50, 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 4: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=60"
+                        alt="Sandwich">
+                    <h3>Sandwich</h3>
+                    <p>₹100</p>
+                    <button class="add-cart-btn" onclick="addToCart('Sandwich', 100, 'Products')">🛒 Add to
+                        Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Sandwich', 100, 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=60')">Buy
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Row 5: 2 items -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop"
+                    alt="French Fries">
+                <h3>French Fries</h3>
+                <p>₹90</p>
+                <button class="add-cart-btn" onclick="addToCart('French Fries', 90, 'Products')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('French Fries', 90, 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&auto=format&fit=crop"
+                    alt="Chicken Lolipop">
+                <h3>Chicken Lolipop</h3>
+                <p>₹220</p>
+                <button class="add-cart-btn" onclick="addToCart('Chicken Lolipop', 220, 'Products')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Chicken Lolipop', 220, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&auto=format&fit=crop')">⚡
+                    Buy Now</button>
+            </div>
+
+        </div>
+
+        <!-- SIDE CART -->
+        <div class="side-cart-container hidden">
+            <h3 class="side-cart-title">Products Cart</h3>
+            <div id="side-cart-items">
+                <!-- Items injected here -->
+            </div>
+            <div class="side-cart-footer">
+                <strong>Total: ₹<span id="side-cart-total">0</span></strong>
+            </div>
+            <div style="margin-top: 15px; text-align: center;">
+                <a href="cart.html" style="color: #d62828; font-weight: bold; text-decoration: none;">View Full Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BUY NOW MODAL -->
+    <div id="buyNowModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-product-details">
+                <!-- Details injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script>const CURRENT_PAGE_CATEGORY = "Products";</script>
+    <script src="website.js"></script>
+</body>
+
+</html>

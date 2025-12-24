@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starters</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+        <h1>Spice Delight Starters</h1>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="starter.html">Starter</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <h1 class="section-title">
+        <center>Starters Menu</center>
+    </h1>
+
+    <div class="main-content">
+        <div class="product-grid">
+
+            <!-- 2-1-2-1-2 Pattern for 8 items -->
+
+            <!-- Row 1: 2 items -->
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1157402361/photo/mini-samosa-with-sauce.webp?a=1&b=1&s=612x612&w=0&k=20&c=JuD_PgAANUCv3i5EP3384btNwJz_HT0PEov5XSMoXBk="
+                    alt="Samosa">
+                <h3>Samosa</h3>
+                <p>₹40</p>
+                <button class="add-cart-btn" onclick="addToCart('Samosa', 40, 'Starters')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Samosa', 40, 'https://media.istockphoto.com/id/1157402361/photo/mini-samosa-with-sauce.webp?a=1&b=1&s=612x612&w=0&k=20&c=JuD_PgAANUCv3i5EP3384btNwJz_HT0PEov5XSMoXBk=')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1625535608282-8f181a38f9e7?w=600&auto=format&fit=crop&q=60"
+                    alt="Soup">
+                <h3>Veg Soup</h3>
+                <p>₹90</p>
+                <button class="add-cart-btn" onclick="addToCart('Veg Soup', 90, 'Starters')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Veg Soup', 90, 'https://images.unsplash.com/photo-1625535608282-8f181a38f9e7?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 2: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/977297270/photo/indian-snack-chicken-65-and-chicken-chili.webp?a=1&b=1&s=612x612&w=0&k=20&c=Rbha3ltexjti8ZghM8GeMj6XAvtZwQDWMcCcSssqcgw="
+                        alt="Manchurian">
+                    <h3>Veg Manchurian</h3>
+                    <p>₹120</p>
+                    <button class="add-cart-btn" onclick="addToCart('Veg Manchurian', 120, 'Starters')">🛒 Add to
+                        Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Veg Manchurian', 120, 'https://media.istockphoto.com/id/977297270/photo/indian-snack-chicken-65-and-chicken-chili.webp?a=1&b=1&s=612x612&w=0&k=20&c=Rbha3ltexjti8ZghM8GeMj6XAvtZwQDWMcCcSssqcgw=')">⚡
+                        Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Row 3: 2 items -->
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1207325786/photo/indian-style-tofu-butter-masala-panner-vegetarian-dish-closeup-in-a-pan-horizontal-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=q_FMwYLd0hmm4RvOZBiQcTvdsCoFx0IQr5KRf9WTPHQ="
+                    alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>₹160</p>
+                <button class="add-cart-btn" onclick="addToCart('Paneer Tikka', 160, 'Starters')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Paneer Tikka', 160, 'https://media.istockphoto.com/id/1207325786/photo/indian-style-tofu-butter-masala-panner-vegetarian-dish-closeup-in-a-pan-horizontal-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=q_FMwYLd0hmm4RvOZBiQcTvdsCoFx0IQr5KRf9WTPHQ=')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1675660733763-84fb0836cfa0?w=600&auto=format&fit=crop&q=60"
+                    alt="Bun Butter">
+                <h3>Golden Bun butter</h3>
+                <p>₹200</p>
+                <button class="add-cart-btn" onclick="addToCart('Bun Butter', 200, 'Starters')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Bun Butter', 200, 'https://plus.unsplash.com/premium_photo-1675660733763-84fb0836cfa0?w=600&auto=format&fit=crop&q=60')">⚡
+                    Buy Now</button>
+            </div>
+
+            <!-- Row 4: 1 item centered -->
+            <div class="wide-card">
+                <div class="product-card">
+                    <img src="https://media.istockphoto.com/id/2230979542/photo/aloo-tikki-or-potato-cutlets.webp?a=1&b=1&s=612x612&w=0&k=20&c=nTRIzfNu87pAX11x67A5NoTrjiTfI44gwUzVPWIrD2c="
+                        alt="Veg Cutlet">
+                    <h3>Veg Cutlet</h3>
+                    <p>₹100</p>
+                    <button class="add-cart-btn" onclick="addToCart('Veg Cutlet', 100, 'Starters')">🛒 Add to
+                        Cart</button>
+                    <button class="buy-now-btn"
+                        onclick="buyNow('Veg Cutlet', 100, 'https://media.istockphoto.com/id/2230979542/photo/aloo-tikki-or-potato-cutlets.webp?a=1&b=1&s=612x612&w=0&k=20&c=nTRIzfNu87pAX11x67A5NoTrjiTfI44gwUzVPWIrD2c=')">⚡
+                        Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Row 5: 2 items -->
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/889606720/photo/gulab-jamun-view-from-above-north-indian-food-and-desserts.webp?a=1&b=1&s=612x612&w=0&k=20&c=YGXBGn3zGX64dqMJbLbh8Q6cDVbckS7EzgNYFawnHok="
+                    alt="Jamun">
+                <h3>Golab Jamun</h3>
+                <p>₹160</p>
+                <button class="add-cart-btn" onclick="addToCart('Golab Jamun', 160, 'Starters')">🛒 Add to Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Golab Jamun', 160, 'https://media.istockphoto.com/id/889606720/photo/gulab-jamun-view-from-above-north-indian-food-and-desserts.webp?a=1&b=1&s=612x612&w=0&k=20&c=YGXBGn3zGX64dqMJbLbh8Q6cDVbckS7EzgNYFawnHok=')">⚡
+                    Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1318685678/photo/a-small-flat-cake-of-minced-chicken-with-herbs-and-spices-ready-to-fry-prepared-for-making.webp?a=1&b=1&s=612x612&w=0&k=20&c=4FGpWFE7ILsXFbLENTIpgC-aRZS_23oMobxVfPDG_9I="
+                    alt="Chicken Cutlet">
+                <h3>Chicken Cutlet</h3>
+                <p>₹280</p>
+                <button class="add-cart-btn" onclick="addToCart('Chicken Cutlet', 280, 'Starters')">🛒 Add to
+                    Cart</button>
+                <button class="buy-now-btn"
+                    onclick="buyNow('Chicken Cutlet', 280, 'https://media.istockphoto.com/id/1318685678/photo/a-small-flat-cake-of-minced-chicken-with-herbs-and-spices-ready-to-fry-prepared-for-making.webp?a=1&b=1&s=612x612&w=0&k=20&c=4FGpWFE7ILsXFbLENTIpgC-aRZS_23oMobxVfPDG_9I=')">⚡
+                    Buy Now</button>
+            </div>
+
+        </div>
+
+        <!-- SIDE CART -->
+        <div class="side-cart-container hidden">
+            <h3 class="side-cart-title">Starters Cart</h3>
+            <div id="side-cart-items">
+                <!-- Items injected here -->
+            </div>
+            <div class="side-cart-footer">
+                <strong>Total: ₹<span id="side-cart-total">0</span></strong>
+            </div>
+            <div style="margin-top: 15px; text-align: center;">
+                <a href="cart.html" style="color: #d62828; font-weight: bold; text-decoration: none;">View Full Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BUY NOW MODAL -->
+    <div id="buyNowModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-product-details">
+                <!-- Details injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script>const CURRENT_PAGE_CATEGORY = "Starters";</script>
+    <script src="website.js"></script>
+</body>
+
+</html>
